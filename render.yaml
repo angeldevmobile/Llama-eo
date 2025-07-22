@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: guru-backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    autoDeploy: true
+    envVars:
+      - key: API_KEY
+        value: 2us77xhuasys9
+      - key: MODEL_PATH
+        value: app/model/Llama-3.2-1B-Instruct-Q5_K_M.gguf

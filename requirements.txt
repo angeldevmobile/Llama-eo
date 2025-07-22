@@ -1,0 +1,6 @@
+flask
+flask-cors
+pytesseract
+pillow
+llama-cpp-python
+pdf2image
