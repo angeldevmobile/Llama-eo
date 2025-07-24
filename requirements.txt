@@ -6,3 +6,4 @@ llama-cpp-python
 pdf2image
 gunicorn
 python-dotenv
+requests
