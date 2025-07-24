@@ -3,10 +3,10 @@ services:
     name: guru-backend
     runtime: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
+    startCommand: "gunicorn -b 0.0.0.0:5000 main:app"
     autoDeploy: true
     envVars:
       - key: API_KEY
         value: 2us77xhuasys9
-      - key: MODEL_PATH
-        value: app/model/Llama-3.2-1B-Instruct-Q5_K_M.gguf
+      - key: MODEL_URL
+        value: https://huggingface.co/Angeldev15/Llama-3.2-1B-Instruct-Q5_K_M/resolve/main/Llama-3.2-1B-Instruct-Q5_K_M.gguf
